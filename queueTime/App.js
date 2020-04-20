@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import { Button } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import MapView,{PROVIDER_GOOGLE,Marker}  from 'react-native-maps';
 import {Platform,StyleSheet,Text,View,Alert,TouchableOpacity,Dimensions} from "react-native";
