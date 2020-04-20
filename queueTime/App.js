@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import { Button } from 'react-native-elements';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import MapView,{PROVIDER_GOOGLE,Marker}  from 'react-native-maps';
 import {Platform,StyleSheet,Text,View,Alert,TouchableOpacity,Dimensions} from "react-native";
 
@@ -30,8 +32,8 @@ export default class App extends React.Component {
   }
 
   getMarkers(){
-    let APIKEY  = "";
-    let radius  = 500;
+    let APIKEY  = "AIzaSyAGn4Er_x20A8BjKGomuKL9R-rup0hcMAI";
+    let radius  = 5000;
     let lat   = this.state.pos.lat;
     let long  = this.state.pos.long;
     let type  = "grocery_or_supermarket";
@@ -126,8 +128,8 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').height-100,
   },
   circle: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
+    width: 20,
+    height: 20,
+    borderRadius: 10,
     backgroundColor: "rgba( 73, 166, 149, 0.5)"}
 });
